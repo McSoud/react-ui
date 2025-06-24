@@ -1,0 +1,56 @@
+{
+  "name": "@mcsoud/react-ui",
+  "version": "1.0.1",
+  "description": "React utility components",
+  "private": false,
+  "author": {
+    "name": "McSoud",
+    "email": "mcsoud@gmail.com",
+    "url": "https://github.com/McSoud"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/McSoud/ui.git"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "mcsoud",
+    "react",
+    "ui"
+  ],
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@mcsoud/laravel": "^1.3.2",
+    "@mcsoud/types": "^1.0.1",
+    "@tanstack/react-query": "^5.80.10",
+    "@types/react": "^19.1.7",
+    "@types/react-dom": "^19.1.6",
+    "axios": "^1.10.0",
+    "sonner": "^2.0.5",
+    "tailwind-merge": "^3.3.0",
+    "typescript": "^5.8.3"
+  }
+}
