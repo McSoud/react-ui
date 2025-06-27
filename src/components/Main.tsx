@@ -6,9 +6,8 @@ interface Props
     DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>,
     "id"
   > {
-  id: Omit<
-    DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>["id"],
-    "undefined"
+  id: NonNullable<
+    DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>["id"]
   >;
 }
 
@@ -18,7 +17,7 @@ export default function Main({ id, ...props }: Props) {
       id={`${id}-content`}
       role="main"
       {...props}
-      className={twMerge("h-full flex-grow", props.className)}
+      className={props.className}
     />
   );
 }

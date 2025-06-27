@@ -59,8 +59,7 @@ export default function useLaravelQuery<T, E = unknown>({
   }, [isSuccess, isError]);
   function Display({ success, error, loading }: LaravelDisplay<T, E>) {
     const { data, isLoading, isSuccess, error: err } = query;
-    const Tag = loading ? "div" : "p";
-    if (isLoading) return <Tag>{loading ?? LARAVEL_OPTIONS.loading}</Tag>;
+    if (isLoading) return <>{loading ?? LARAVEL_OPTIONS.loading}</>;
     return (
       <>
         {isSuccess

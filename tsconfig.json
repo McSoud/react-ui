@@ -11,5 +11,5 @@
     "skipLibCheck": true,
     "jsx": "react-jsx"
   },
-  "include": ["./src/index.ts"]
+  "include": ["./src/index.ts", "./src/assets/css/index.css"]
 }
