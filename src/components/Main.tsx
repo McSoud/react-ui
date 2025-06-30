@@ -1,5 +1,4 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
-import { twMerge } from "tailwind-merge";
 
 interface Props
   extends Omit<
