@@ -5,7 +5,7 @@ export default function SvgFacebook(props: SVGProps<SVGSVGElement>) {
     <svg
       width="18"
       height="36"
-      fill="black"
+      fill="#087def"
       {...props}
       viewBox="0 0 18 36"
       xmlns="http://www.w3.org/2000/svg"

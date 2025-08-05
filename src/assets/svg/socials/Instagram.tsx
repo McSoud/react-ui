@@ -5,7 +5,7 @@ export default function SvgInstagram(props: SVGProps<SVGSVGElement>) {
     <svg
       width="20"
       height="20"
-      fill="black"
+      fill="#dd2677"
       {...props}
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"
