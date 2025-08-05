@@ -1,4 +1,9 @@
 @layer base {
+  @keyframes loading-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
   main[id$="-content"] {
     flex-grow: 1;
   }
@@ -23,6 +28,6 @@
 }
 @layer components {
   .loading-svg {
-    animation: var(--animate-spin);
+    animation: loading-spin 1s linear infinite;
   }
 }
