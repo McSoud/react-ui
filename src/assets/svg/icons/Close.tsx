@@ -3,9 +3,9 @@ import { SVGProps } from "react";
 export default function SvgClose(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      fill="black"
       width="18"
       height="19"
+      fill="black"
       {...props}
       viewBox="0 0 18 19"
       xmlns="http://www.w3.org/2000/svg"

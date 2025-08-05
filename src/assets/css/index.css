@@ -21,3 +21,8 @@
     }
   }
 }
+@layer components {
+  .loading-svg {
+    animation: var(--animate-spin);
+  }
+}
