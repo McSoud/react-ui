@@ -4,23 +4,6 @@ If you have a suggestion or just want to help improve this package, your contrib
 
 ## Usage
 
-### Main
-
-The `Main` component is a wrapper for the `<main>` element with a mandatory `id` attribute. Always use it as the root component of your page, provide an `<h1>` element as a child, and direct children should typically be `<section>` with an `id` attribute including the `id` of the parent and the section name.
-
-```tsx
-import { Main } from "@mcsoud/react-ui";
-
-export default function PageExample() {
-  return (
-    <Main id="example">
-      <h1 hidden>Example</h1>
-      <p>This is an example page.</p>
-    </Main>
-  );
-}
-```
-
 ### Modal
 
 The `Modal` component is a wrapper for the `<dialog>` element with a mandatory `id` attribute. Modal ids are typesafe to toggle the modal state.
