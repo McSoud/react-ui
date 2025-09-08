@@ -1,4 +1,3 @@
-import Main from "./components/Main";
 import Modal from "./components/Modal";
 import { toggleModal } from "./functions";
 import useLaravelQuery, { UI_OPTIONS } from "./components/Display";
@@ -10,5 +9,5 @@ export type ModalIds = ModalsRegistration extends { modals: infer T }
   ? T
   : "example";
 
-export { Main, Modal, useLaravelQuery, UI_OPTIONS, toggleModal };
+export { Modal, useLaravelQuery, UI_OPTIONS, toggleModal };
 export * from "./svg";

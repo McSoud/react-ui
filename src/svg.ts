@@ -12,6 +12,8 @@ import SvgYoutube from "./assets/svg/socials/Youtube";
 import SvgApple from "./assets/svg/socials/Apple";
 import SvgGooglePlay from "./assets/svg/socials/GooglePlay";
 import SvgLink from "./assets/svg/icons/Link";
+import SvgEye from "./assets/svg/icons/Eye";
+import SvgEyeOff from "./assets/svg/icons/EyeOff";
 
 export {
   SvgLoading,
@@ -28,4 +30,6 @@ export {
   SvgApple,
   SvgGooglePlay,
   SvgLink,
+  SvgEye,
+  SvgEyeOff,
 };
