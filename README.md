@@ -103,3 +103,5 @@ This package provides a few svg icons and socials.
 ### Icons
 
 - `<SvgLink />`
+- `<SvgEye />`
+- `<SvgEyeOff />`
