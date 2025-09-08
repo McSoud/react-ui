@@ -54,6 +54,18 @@ export default function PageExample() {
 }
 ```
 
+To change the default options, you can import the `REACT_UI_OPTIONS` object and change the values.
+
+```ts
+import { REACT_UI_OPTIONS } from "@mcsoud/react-ui";
+
+REACT_UI_OPTIONS.laravelDisplay = {
+  loading: <p>Loading...</p>,
+  error: <p>Something went wrong</p>,
+  success: <p>Something went right</p>,
+};
+```
+
 ## Svgs
 
 This package provides a few svg icons and socials.

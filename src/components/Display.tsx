@@ -19,17 +19,15 @@ interface LaravelDisplay<T, E> {
 }
 
 interface UIOptions {
-  loading: ReactNode;
-  error: ReactNode;
-  errorToast: string;
-  modals: string[];
+  laravelDisplay: { loading: ReactNode; error: ReactNode; errorToast: string };
 }
 
-export const UI_OPTIONS: UIOptions = {
-  loading: <p>Loading...</p>,
-  error: <p>Something went wrong</p>,
-  errorToast: "Something went wrong",
-  modals: [] as const,
+export const REACT_UI_OPTIONS: UIOptions = {
+  laravelDisplay: {
+    loading: <p>Loading...</p>,
+    error: <p>Something went wrong</p>,
+    errorToast: "Something went wrong",
+  },
 };
 
 export default function useLaravelQuery<T, E = unknown>({
@@ -55,20 +53,21 @@ export default function useLaravelQuery<T, E = unknown>({
             ? toastError
             : toastError(error as AxiosError<LaravelError<E>>)
           : (error as AxiosError<LaravelError<E>>).response?.data.message ??
-              UI_OPTIONS.errorToast
+              REACT_UI_OPTIONS.laravelDisplay.errorToast
       );
     }
   }, [isSuccess, isError]);
   function Display({ success, error, loading }: LaravelDisplay<T, E>) {
     const { data, isLoading, isSuccess, error: err } = query;
-    if (isLoading) return <>{loading ?? UI_OPTIONS.loading}</>;
+    if (isLoading)
+      return <>{loading ?? REACT_UI_OPTIONS.laravelDisplay.loading}</>;
     return (
       <>
         {isSuccess
           ? data?.success && success(data.data)
           : error
           ? error(err as AxiosError<LaravelError<E>>)
-          : UI_OPTIONS.error}
+          : REACT_UI_OPTIONS.laravelDisplay.error}
       </>
     );
   }
