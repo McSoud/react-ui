@@ -91,6 +91,7 @@ This package provides a few svg icons and socials.
 - `<SvgInstagram />`
 - `<SvgTikTok />`
 - `<SvgWhatsapp />`
+- `<SvgSnapchat />`
 - `<SvgYoutube />`
 - `<SvgApple />`
 - `<SvgGooglePlay />`
@@ -100,3 +101,4 @@ This package provides a few svg icons and socials.
 - `<SvgLink />`
 - `<SvgEye />`
 - `<SvgEyeOff />`
+- `<SvgTrash />`
