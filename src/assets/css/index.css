@@ -3,7 +3,8 @@
     transform: rotate(360deg);
   }
 }
-dialog.modal {
+.mcsoud-modal {
+  margin: auto;
   padding: 1rem;
   border-radius: var(--radius-md);
   header {
